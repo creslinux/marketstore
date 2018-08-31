@@ -35,4 +35,3 @@ RUN ["marketstore", "init"]
 VOLUME /data
 EXPOSE 5993
 
-ENTRYPOINT ["marketstore"]
