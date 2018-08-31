@@ -32,9 +32,7 @@ COPY --from=builder /go/bin/marketstore /bin/
 COPY --from=builder /go/bin/*.so /bin/
 
 RUN ["marketstore", "init"]
-RUN mv mkts.yml /etc/
 VOLUME /data
 EXPOSE 5993
 
 ENTRYPOINT ["marketstore"]
-CMD ["start", "--config", "/etc/mkts.yml"]
