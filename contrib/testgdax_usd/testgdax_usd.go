@@ -118,7 +118,7 @@ func (gd *GdaxFetcher) Run() {
 	client := testgdax.NewClient("", "", "")
 	timeStart := time.Time{}
 	for _, symbol := range symbols {
-		tbk := io.NewTimeBucketKey("testgdax_usd_" + symbol + "/" + gd.baseTimeframe.String + "/OHLCV")
+		tbk := io.NewTimeBucketKey("TESTGDAX_USD_" + symbol + "/" + gd.baseTimeframe.String + "/OHLCV")
 		lastTimestamp := findLastTimestamp(symbol, tbk)
 		glog.Infof("lastTimestamp for %s = %v", symbol, lastTimestamp)
 		if timeStart.IsZero() || (!lastTimestamp.IsZero() && lastTimestamp.Before(timeStart)) {

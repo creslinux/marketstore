@@ -277,7 +277,7 @@ func (bn *BinanceFetcher) Run() {
 
 	// Get last timestamp collected
 	for _, symbol := range symbols {
-		tbk := io.NewTimeBucketKey(symbol + "/" + bn.baseTimeframe.String + "/OHLCV")
+		tbk := io.NewTimeBucketKey("BINANCE_BNB_" + symbol + "/" + bn.baseTimeframe.String + "/OHLCV")
 		lastTimestamp := findLastTimestamp(symbol, tbk)
 		glog.Infof("lastTimestamp for %s = %v", symbol, lastTimestamp)
 		if timeStart.IsZero() || (!lastTimestamp.IsZero() && lastTimestamp.Before(timeStart)) {
