@@ -182,7 +182,7 @@ func (gd *GdaxFetcher) Run() {
 				rates[0].Time, rates[(len(rates))-1].Time)
 			csm := io.NewColumnSeriesMap()
 			// creslin change from symbol to exchange_symbol_quote
-			tbk := io.NewTimeBucketKey("gdax_usd_" + symbol + "/" + gd.baseTimeframe.String + "/OHLCV")
+			tbk := io.NewTimeBucketKey("GDAX_BTC_" + symbol + "/" + gd.baseTimeframe.String + "/OHLCV")
 			csm.AddColumnSeries(*tbk, cs)
 			executor.WriteCSM(csm, false)
 		}
