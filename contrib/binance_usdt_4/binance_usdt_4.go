@@ -475,7 +475,7 @@ func (bn *BinanceFetcher) Run() {
   			// cs.AddColumn("takerBuyQuoteAssetVolume", takerBuyQuoteAssetVolume)
 				csm := io.NewColumnSeriesMap()
   			// creslin change from symbol to exchange_symbol_quote
-				tbk := io.NewTimeBucketKey("binance_usdt_" + symbol + "/" + bn.baseTimeframe.String + "/OHLCV")
+				tbk := io.NewTimeBucketKey("BINANCE_USDT_" + symbol + "/" + bn.baseTimeframe.String + "/OHLCV")
 				csm.AddColumnSeries(*tbk, cs)
 				executor.WriteCSM(csm, false)
 			}
