@@ -130,7 +130,7 @@ func (gd *BitmexFetcher) Run() {
 	for {
 		lastTime := timeStart
 		for _, symbol := range symbols {
-			glog.Infof("Requesting %s %v with 500 time periods", symbol, timeStart)
+			// glog.Infof("Requesting %s %v with 500 time periods", symbol, timeStart)
 			rates, err := api.GetBuckets(symbol, timeStart, gd.baseTimeframe.String)
 			if err != nil {
 				glog.Errorf("Response error: %v", err)

@@ -141,7 +141,7 @@ func (gd *GdaxFetcher) Run() {
 				End:         timeEnd,
 				Granularity: int(gd.baseTimeframe.Duration.Seconds()),
 			}
-			glog.Infof("Requesting %s %v - %v", symbol, timeStart, timeEnd)
+			// glog.Infof("Requesting %s %v - %v", symbol, timeStart, timeEnd)
 			rates, err := client.GetHistoricRates(symbol+"-BTC", params)
 			if err != nil {
 				glog.Errorf("Response error: %v", err)
