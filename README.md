@@ -1,3 +1,13 @@
+# MODIFED PROBABLY NO USE TO MOST PEOPLE
+
+I've switched the plugins for binanceto use creslinux/go-binance as client which uses
+a modified go-binance that is HTTP not HTTPS. 
+
+This is as my setup is behind a caching / src IP load balancing proxy and its easier to avoid 
+SSL offload 
+
+# ORIGINAL README BELOW
+
 # MarketStore
 ![Build Status](https://circleci.com/gh/alpacahq/marketstore/tree/master.png?7989cb00be70f055e0cb19184b212a8ed21b0cbb) [![GoDoc](http://img.shields.io/badge/godoc-reference-blue.svg)](https://godoc.org/github.com/alpacahq/marketstore) [![chatroom icon](https://patrolavia.github.io/telegram-badge/chat.png)](https://t.me/joinchat/HKxN3BGm6mE5YBt79CMM3Q)
 
