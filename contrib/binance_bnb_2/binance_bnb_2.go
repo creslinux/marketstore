@@ -386,7 +386,7 @@ func (bn *BinanceFetcher) Run() {
 		timeEndM = timeEnd.UnixNano() / (int64(time.Millisecond) / int64(time.Nanosecond))
 
 		for _, symbol := range symbols {
-			// glog.Infof("Requesting %s %v - %v", symbol, timeStart, timeEnd)
+			glog.Infof("Requesting %s %v - %v", symbol, timeStart, timeEnd)
 			rates, err := client.NewKlinesService().Symbol(symbol + baseCurrency).Interval(timeInterval).StartTime(timeStartM).EndTime(timeEndM).Do(context.Background())
 			if err != nil {
 				glog.Errorf("Response error: %v", err)
