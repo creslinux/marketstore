@@ -6,7 +6,7 @@ a modified go-binance that is HTTP not HTTPS.
 This is as my setup is behind a caching / src IP load balancing proxy and its easier to avoid 
 SSL offload 
 
-docker build -t rtmtbmarketstore .
+docker build -t rtmtbmarketstore .  
 docker run -d --name rtmtbms  -p 5993:5993  -v $(pwd)/mkts.yml:/etc/mkts.yml  -v $(pwd)/dnsmasq.d:/etc/dnsmasq.d  -v $(pwd)/dnsmasq.hosts:/etc/dnsmasq.hosts rtmtbmarketstore
 
 
