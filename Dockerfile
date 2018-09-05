@@ -38,7 +38,7 @@ RUN echo 'listen-address=127.0.0.1' >> /etc/dnsmasq.conf \
 	&& echo 'user=root' >> /etc/dnsmasq.conf
 
 # print out what DNS resover GO is using on startup
-ENV GODEBUG=netdns=go+1
+ENV GODEBUG=netdns=cgo+1
 
 RUN ["marketstore", "init"]
 RUN mv mkts.yml /etc/
