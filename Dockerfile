@@ -26,10 +26,10 @@ RUN make install plugins
 # a very small output image for deployment.
 #
 FROM alpine:latest
-RUN apk --no-cache add ca-certificates tzdata dnsmasq bash
+RUN apk --no-cache add ca-certificates tzdata
 WORKDIR /
 COPY --from=builder /go/bin/marketstore /bin/
-COPY --from=builder /go/bin/*.so /bin/o
+COPY --from=builder /go/bin/*.so /bin/
 
 # configure dnsmasq - everything to google, but api.binance.com to proxy
 RUN echo 'listen-address=127.0.0.1' >> /etc/dnsmasq.conf \
