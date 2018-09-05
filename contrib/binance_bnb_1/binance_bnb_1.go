@@ -9,7 +9,7 @@ import (
 	"strconv"
 	"time"
 
-	binance "github.com/adshao/go-binance"
+	binance "github.com/creslinux/go-binance"
 	"github.com/alpacahq/marketstore/executor"
 	"github.com/alpacahq/marketstore/planner"
 	"github.com/alpacahq/marketstore/plugins/bgworker"
