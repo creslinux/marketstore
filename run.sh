@@ -1,7 +1,12 @@
 #!/usr/bin/env bash
 
+# Blank and rewrite our resolv.conf
+> /etc/resolv.conf
+echo "#Use self as name server - dnsmaq"  >> /etc/resolv.conf
+echo "nameserver 127.0.0.1" >> /etc/resolv.conf
+
 # Start dnsmasq
-exec dnsmasq --no-daemon -D
+dnsmasq --no-daemon -D
 status=$?
 if [ $status -ne 0 ]; then
   echo "Failed to start dnsmasq: $status"
