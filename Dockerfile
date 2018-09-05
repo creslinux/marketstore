@@ -46,4 +46,6 @@ EXPOSE 5993
 COPY run.sh /
 RUN chmod 755 /run.sh
 
+COPY resolv.conf /etc/
+
 CMD ["/run.sh"]
