@@ -31,6 +31,9 @@ WORKDIR /
 COPY --from=builder /go/bin/marketstore /bin/
 COPY --from=builder /go/bin/*.so /bin/
 
+# Fix for netgo to recognise /etc/hosts
+RUN [ ! -e /etc/nsswitch.conf ] && echo 'hosts: files dns' > /etc/nsswitch.conf
+
 RUN ["marketstore", "init"]
 RUN mv mkts.yml /etc/
 VOLUME /data
