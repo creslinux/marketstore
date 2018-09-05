@@ -26,18 +26,24 @@ RUN make install plugins
 # a very small output image for deployment.
 #
 FROM alpine:latest
-RUN apk --no-cache add ca-certificates tzdata
+RUN apk --no-cache add ca-certificates tzdata dnsmasq bash
 WORKDIR /
 COPY --from=builder /go/bin/marketstore /bin/
-COPY --from=builder /go/bin/*.so /bin/
+COPY --from=builder /go/bin/*.so /bin/o
 
-# Fix for netgo to recognise /etc/hosts
-RUN [ ! -e /etc/nsswitch.conf ] && echo 'hosts: files dns' > /etc/nsswitch.conf
+# configure dnsmasq - everything to google, but api.binance.com to proxy
+RUN echo 'listen-address=127.0.0.1' >> /etc/dnsmasq.conf \
+	&& echo 'resolv-file=/etc/resolv.dnsmasq.conf' >> /etc/dnsmasq.conf \
+	&& echo 'conf-dir=/etc/dnsmasq.d' >> /etc/dnsmasq.conf \
+	&& echo 'user=root' >> /etc/dnsmasq.conf
+
 
 RUN ["marketstore", "init"]
 RUN mv mkts.yml /etc/
 VOLUME /data
 EXPOSE 5993
 
-ENTRYPOINT ["marketstore"]
-CMD ["start", "--config", "/etc/mkts.yml"]
+COPY run.sh /
+RUN chmod 755 /run.sh
+
+CMD ["/run.sh"]
