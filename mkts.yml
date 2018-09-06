@@ -28,503 +28,1343 @@ bgworkers:
   - module: binance_usdt_1.so
     name: Binance_USDT_1_Fetcher
     config:
-      symbols:
-        - ADA
-        - BNB
-        - BTC
-        - EOS
-        - ETC
-        - ETH
-        - ICX
-        - IOTA
-        - LTC
       base_timeframe: "1Min"
       query_start: "2018-07-07 00:00"
+      symbols:
+        - ADA
   - module: binance_usdt_2.so
     name: Binance_USDT_2_Fetcher
     config:
+      base_timeframe: "1Min"
+      query_start: "2018-07-07 00:00"
+      symbols:
+        - BNB
+  - module: binance_usdt_3.so
+    name: Binance_USDT_3_Fetcher
+    config:
+      base_timeframe: "1Min"
+      query_start: "2018-07-07 00:00"
+      symbols:
+        - BTC
+  - module: binance_usdt_4.so
+    name: Binance_USDT_4_Fetcher
+    config:
+      base_timeframe: "1Min"
+      query_start: "2018-07-07 00:00"
+      symbols:
+        - EOS
+  - module: binance_usdt_5.so
+    name: Binance_USDT_5_Fetcher
+    config:
+      base_timeframe: "1Min"
+      query_start: "2018-07-07 00:00"
+      symbols:
+        - ETC
+  - module: binance_usdt_6.so
+    name: Binance_USDT_6_Fetcher
+    config:
+      base_timeframe: "1Min"
+      query_start: "2018-07-07 00:00"
+      symbols:
+        - ETH
+  - module: binance_usdt_7.so
+    name: Binance_USDT_7_Fetcher
+    config:
+      base_timeframe: "1Min"
+      query_start: "2018-07-07 00:00"
+      symbols:
+        - ICX
+  - module: binance_usdt_8.so
+    name: Binance_USDT_8_Fetcher
+    config:
+      base_timeframe: "1Min"
+      query_start: "2018-07-07 00:00"
+      symbols:
+        - IOTA
+  - module: binance_usdt_9.so
+    name: Binance_USDT_9_Fetcher
+    config:
+      base_timeframe: "1Min"
+      query_start: "2018-07-07 00:00"
+      symbols:
+        - LTC
+  - module: binance_usdt_10.so
+    name: Binance_USDT_10_Fetcher
+    config:
+      base_timeframe: "1Min"
+      query_start: "2018-07-07 00:00"
       symbols:
         - NEO
-        - NULS
-        - ONT
-        - QTUM
-        - TRX
-        - TUSD
-        - VEN
-        - VET
-        - XLM
-        - XRP
+  - module: binance_usdt_11.so
+    name: Binance_USDT_11_Fetcher
+    config:
       base_timeframe: "1Min"
-      query_start: "2018-07-07 00:00"        
+      query_start: "2018-07-07 00:00"
+      symbols:
+        - NULS
+  - module: binance_usdt_12.so
+    name: Binance_USDT_12_Fetcher
+    config:
+      base_timeframe: "1Min"
+      query_start: "2018-07-07 00:00"
+      symbols:
+        - ONT
+  - module: binance_usdt_13.so
+    name: Binance_USDT_13_Fetcher
+    config:
+      base_timeframe: "1Min"
+      query_start: "2018-07-07 00:00"
+      symbols:
+        - QTUM
+  - module: binance_usdt_14.so
+    name: Binance_USDT_14_Fetcher
+    config:
+      base_timeframe: "1Min"
+      query_start: "2018-07-07 00:00"
+      symbols:
+        - TRX
+  - module: binance_usdt_15.so
+    name: Binance_USDT_15_Fetcher
+    config:
+      base_timeframe: "1Min"
+      query_start: "2018-07-07 00:00"
+      symbols:
+        - TUSD
+  - module: binance_usdt_16.so
+    name: Binance_USDT_16_Fetcher
+    config:
+      base_timeframe: "1Min"
+      query_start: "2018-07-07 00:00"
+      symbols:
+        - VEN
+  - module: binance_usdt_17.so
+    name: Binance_USDT_17_Fetcher
+    config:
+      base_timeframe: "1Min"
+      query_start: "2018-07-07 00:00"
+      symbols:
+        - VET
+  - module: binance_usdt_18.so
+    name: Binance_USDT_18_Fetcher
+    config:
+      base_timeframe: "1Min"
+      query_start: "2018-07-07 00:00"
+      symbols:
+        - XLM
+  - module: binance_usdt_19.so
+    name: Binance_USDT_19_Fetcher
+    config:
+      base_timeframe: "1Min"
+      query_start: "2018-07-07 00:00"
+      symbols:
+        - XRP
   - module: binance_btc_1.so
     name: Binance_BTC_1_Fetcher
     config:
+      base_timeframe: "1Min"
+      query_start: "2018-07-07 00:00"
       symbols:
         - ADA
         - ADX
         - AE
-        - AGI
-        - AION
-        - AMB
-        - APPC
-        - ARDR
-        - ARK
-        - ARN
-        - AST
-        - BAT
-        - BCC
-        - BCD
-        - BCN
-        - BCPT
-        - BLZ
-        - BNB
-        - BNT
-        - BQX
-        - BRD
-        - BTG
-        - BTS
-        - CDT
-        - CHAT
-        - CLOAK
-        - CMT
-        - CND
-        - CVC
-        - DASH
-        - DATA
-        - DENT
-        - DLT
-        - DNT
-        - DOCK
-      base_timeframe: "1Min"
-      query_start: "2018-07-07 00:00"
   - module: binance_btc_2.so
     name: Binance_BTC_2_Fetcher
     config:
-      symbols:
-        - GTO
-        - GVT
-        - GXS
-        - HC
-        - HOT
-        - HSR
-        - ICN
-        - ICX
-        - INS
-        - IOST
-        - IOTA
-        - IOTX
-        - KEY
-        - KMD
-        - KNC
-        - LEND
-        - LINK
-        - LOOM
-        - LRC
-        - LSK
-        - LTC
-        - LUN
-        - MANA
-        - MCO
-        - MDA
-        - MFT
-        - MOD
-        - MTH
-        - MTL
-        - NANO
-        - NAS
-        - NAV
-        - NCASH
-        - NEBL
-        - NEO
-        - NPXS
-        - NULS
       base_timeframe: "1Min"
       query_start: "2018-07-07 00:00"
+      symbols:
+        - AGI
+        - AION
+        - AMB
   - module: binance_btc_3.so
     name: Binance_BTC_3_Fetcher
     config:
+      base_timeframe: "1Min"
+      query_start: "2018-07-07 00:00"
+      symbols:
+        - APPC
+        - ARDR
+        - ARK
+  - module: binance_btc_4.so
+    name: Binance_BTC_4_Fetcher
+    config:
+      base_timeframe: "1Min"
+      query_start: "2018-07-07 00:00"
+      symbols:
+        - ARN
+        - AST
+        - BAT
+  - module: binance_btc_5.so
+    name: Binance_BTC_5_Fetcher
+    config:
+      base_timeframe: "1Min"
+      query_start: "2018-07-07 00:00"
+      symbols:
+        - BCC
+        - BCD
+        - BCN
+  - module: binance_btc_6.so
+    name: Binance_BTC_6_Fetcher
+    config:
+      base_timeframe: "1Min"
+      query_start: "2018-07-07 00:00"
+      symbols:
+        - BCPT
+        - BLZ
+        - BNB
+  - module: binance_btc_7.so
+    name: Binance_BTC_7_Fetcher
+    config:
+      base_timeframe: "1Min"
+      query_start: "2018-07-07 00:00"
+      symbols:
+        - BNT
+        - BQX
+        - BRD
+  - module: binance_btc_8.so
+    name: Binance_BTC_8_Fetcher
+    config:
+      base_timeframe: "1Min"
+      query_start: "2018-07-07 00:00"
+      symbols:
+        - BTG
+        - BTS
+        - CDT
+  - module: binance_btc_9.so
+    name: Binance_BTC_9_Fetcher
+    config:
+      base_timeframe: "1Min"
+      query_start: "2018-07-07 00:00"
+      symbols:
+        - CHAT
+        - CLOAK
+        - CMT
+  - module: binance_btc_10.so
+    name: Binance_BTC_10_Fetcher
+    config:
+      base_timeframe: "1Min"
+      query_start: "2018-07-07 00:00"
+      symbols:
+        - CND
+        - CVC
+        - DASH
+  - module: binance_btc_11.so
+    name: Binance_BTC_11_Fetcher
+    config:
+      base_timeframe: "1Min"
+      query_start: "2018-07-07 00:00"
+      symbols:
+        - DATA
+        - DENT
+        - DLT
+  - module: binance_btc_12.so
+    name: Binance_BTC_12_Fetcher
+    config:
+      base_timeframe: "1Min"
+      query_start: "2018-07-07 00:00"
+      symbols:
+        - DNT
+        - DOCK
+        - GTO
+  - module: binance_btc_13.so
+    name: Binance_BTC_13_Fetcher
+    config:
+      base_timeframe: "1Min"
+      query_start: "2018-07-07 00:00"
+      symbols:
+        - GVT
+        - GXS
+        - HC
+  - module: binance_btc_14.so
+    name: Binance_BTC_14_Fetcher
+    config:
+      base_timeframe: "1Min"
+      query_start: "2018-07-07 00:00"
+      symbols:
+        - HOT
+        - HSR
+        - ICN
+  - module: binance_btc_15.so
+    name: Binance_BTC_15_Fetcher
+    config:
+      base_timeframe: "1Min"
+      query_start: "2018-07-07 00:00"
+      symbols:
+        - ICX
+        - INS
+        - IOST
+  - module: binance_btc_16.so
+    name: Binance_BTC_16_Fetcher
+    config:
+      base_timeframe: "1Min"
+      query_start: "2018-07-07 00:00"
+      symbols:
+        - IOTA
+        - IOTX
+        - KEY
+  - module: binance_btc_17.so
+    name: Binance_BTC_17_Fetcher
+    config:
+      base_timeframe: "1Min"
+      query_start: "2018-07-07 00:00"
+      symbols:
+        - KMD
+        - KNC
+        - LEND
+  - module: binance_btc_18.so
+    name: Binance_BTC_18_Fetcher
+    config:
+      base_timeframe: "1Min"
+      query_start: "2018-07-07 00:00"
+      symbols:
+        - LINK
+        - LOOM
+        - LRC
+  - module: binance_btc_19.so
+    name: Binance_BTC_19_Fetcher
+    config:
+      base_timeframe: "1Min"
+      query_start: "2018-07-07 00:00"
+      symbols:
+        - LSK
+        - LTC
+        - LUN
+  - module: binance_btc_20.so
+    name: Binance_BTC_20_Fetcher
+    config:
+      base_timeframe: "1Min"
+      query_start: "2018-07-07 00:00"
+      symbols:
+        - MANA
+        - MCO
+        - MDA
+  - module: binance_btc_21.so
+    name: Binance_BTC_21_Fetcher
+    config:
+      base_timeframe: "1Min"
+      query_start: "2018-07-07 00:00"
+      symbols:
+        - MFT
+        - MOD
+        - MTH
+  - module: binance_btc_22.so
+    name: Binance_BTC_22_Fetcher
+    config:
+      base_timeframe: "1Min"
+      query_start: "2018-07-07 00:00"
+      symbols:
+        - MTL
+        - NANO
+        - NAS
+  - module: binance_btc_23.so
+    name: Binance_BTC_23_Fetcher
+    config:
+      base_timeframe: "1Min"
+      query_start: "2018-07-07 00:00"
+      symbols:
+        - NAV
+        - NCASH
+        - NEBL
+  - module: binance_btc_24.so
+    name: Binance_BTC_24_Fetcher
+    config:
+      base_timeframe: "1Min"
+      query_start: "2018-07-07 00:00"
+      symbols:
+        - NEO
+        - NPXS
+        - NULS
+  - module: binance_btc_25.so
+    name: Binance_BTC_25_Fetcher
+    config:
+      base_timeframe: "1Min"
+      query_start: "2018-07-07 00:00"
       symbols:
         - PPT
         - QKC
         - QLC
+  - module: binance_btc_26.so
+    name: Binance_BTC_26_Fetcher
+    config:
+      base_timeframe: "1Min"
+      query_start: "2018-07-07 00:00"
+      symbols:
         - QSP
         - QTUM
         - RCN
+  - module: binance_btc_27.so
+    name: Binance_BTC_27_Fetcher
+    config:
+      base_timeframe: "1Min"
+      query_start: "2018-07-07 00:00"
+      symbols:
         - RDN
         - REP
         - REQ
+  - module: binance_btc_28.so
+    name: Binance_BTC_28_Fetcher
+    config:
+      base_timeframe: "1Min"
+      query_start: "2018-07-07 00:00"
+      symbols:
         - RLC
         - RPX
         - SALT
+  - module: binance_btc_29.so
+    name: Binance_BTC_29_Fetcher
+    config:
+      base_timeframe: "1Min"
+      query_start: "2018-07-07 00:00"
+      symbols:
         - SC
         - SKY
         - SNGLS
+  - module: binance_btc_30.so
+    name: Binance_BTC_30_Fetcher
+    config:
+      base_timeframe: "1Min"
+      query_start: "2018-07-07 00:00"
+      symbols:
         - SNM
         - SNT
         - STEEM
+  - module: binance_btc_31.so
+    name: Binance_BTC_31_Fetcher
+    config:
+      base_timeframe: "1Min"
+      query_start: "2018-07-07 00:00"
+      symbols:
         - STORJ
         - STORM
         - STRAT
+  - module: binance_btc_32.so
+    name: Binance_BTC_32_Fetcher
+    config:
+      base_timeframe: "1Min"
+      query_start: "2018-07-07 00:00"
+      symbols:
         - SUB
         - SYS
         - THETA
+  - module: binance_btc_33.so
+    name: Binance_BTC_33_Fetcher
+    config:
+      base_timeframe: "1Min"
+      query_start: "2018-07-07 00:00"
+      symbols:
         - TNB
         - TNT
         - TRIG
+  - module: binance_btc_34.so
+    name: Binance_BTC_34_Fetcher
+    config:
+      base_timeframe: "1Min"
+      query_start: "2018-07-07 00:00"
+      symbols:
         - TRX
         - TUSD
         - VEN
+  - module: binance_btc_35.so
+    name: Binance_BTC_35_Fetcher
+    config:
+      base_timeframe: "1Min"
+      query_start: "2018-07-07 00:00"
+      symbols:
         - VET
         - VIA
         - VIB
+  - module: binance_btc_36.so
+    name: Binance_BTC_36_Fetcher
+    config:
+      base_timeframe: "1Min"
+      query_start: "2018-07-07 00:00"
+      symbols:
         - VIBE
         - WABI
         - WAN
-        - WAVES
+  - module: binance_btc_37.so
+    name: Binance_BTC_37_Fetcher
+    config:
       base_timeframe: "1Min"
       query_start: "2018-07-07 00:00"
-  - module: binance_btc_4.so
-    name: Binance_BTC_4_Fetcher
-    config:
       symbols:
+        - WAVES
         - ENG
         - ENJ
+  - module: binance_btc_38.so
+    name: Binance_BTC_38_Fetcher
+    config:
+      base_timeframe: "1Min"
+      query_start: "2018-07-07 00:00"
+      symbols:
         - EOS
         - ETC
         - ETH
+  - module: binance_btc_39.so
+    name: Binance_BTC_39_Fetcher
+    config:
+      base_timeframe: "1Min"
+      query_start: "2018-07-07 00:00"
+      symbols:
         - EVX
         - FUEL
         - FUN
+  - module: binance_btc_40.so
+    name: Binance_BTC_40_Fetcher
+    config:
+      base_timeframe: "1Min"
+      query_start: "2018-07-07 00:00"
+      symbols:
         - GAS
         - GNT
         - GRS
+  - module: binance_btc_41.so
+    name: Binance_BTC_41_Fetcher
+    config:
+      base_timeframe: "1Min"
+      query_start: "2018-07-07 00:00"
+      symbols:
         - NXS
         - OAX
         - OMG
+  - module: binance_btc_42.so
+    name: Binance_BTC_42_Fetcher
+    config:
+      base_timeframe: "1Min"
+      query_start: "2018-07-07 00:00"
+      symbols:
         - ONT
         - OST
         - PHX
+  - module: binance_btc_43.so
+    name: Binance_BTC_43_Fetcher
+    config:
+      base_timeframe: "1Min"
+      query_start: "2018-07-07 00:00"
+      symbols:
         - PIVX
         - POA
         - POE
+  - module: binance_btc_44.so
+    name: Binance_BTC_44_Fetcher
+    config:
+      base_timeframe: "1Min"
+      query_start: "2018-07-07 00:00"
+      symbols:
         - POLY
         - POWR
         - WTC
+  - module: binance_btc_45.so
+    name: Binance_BTC_45_Fetcher
+    config:
+      base_timeframe: "1Min"
+      query_start: "2018-07-07 00:00"
+      symbols:
         - XEM
         - XLM
         - XMR
+  - module: binance_btc_46.so
+    name: Binance_BTC_46_Fetcher
+    config:
+      base_timeframe: "1Min"
+      query_start: "2018-07-07 00:00"
+      symbols:
         - XRP
         - XVG
         - XZC
+  - module: binance_btc_47.so
+    name: Binance_BTC_47_Fetcher
+    config:
+      base_timeframe: "1Min"
+      query_start: "2018-07-07 00:00"
+      symbols:
         - ZEC
         - ZEN
         - ZIL
+  - module: binance_btc_48.so
+    name: Binance_BTC_48_Fetcher
+    config:
+      base_timeframe: "1Min"
+      query_start: "2018-07-07 00:00"
+      symbols:
         - ZRX
         - WINGS
         - WPR
-        - EDO
-        - ELF
+  - module: binance_btc_49.so
+    name: Binance_BTC_49_Fetcher
+    config:
       base_timeframe: "1Min"
       query_start: "2018-07-07 00:00"
+      symbols:
+        - EDO
+        - ELF
   - module: binance_bnb_1.so
     name: Binance_BNB_1_Fetcher
     config:
+      base_timeframe: "1Min"
+      query_start: "2018-07-07 00:00"
       symbols:
         - ADA
         - ADX
-        - AE
-        - AGI
-        - AION
-        - AMB
-        - APPC
-        - ARDR
-        - BAT
-        - BCN
-        - BCPT
-        - BLZ
-        - BRD
-        - BTS
-        - CMT
-        - CND
-        - CVC
-        - DLT
-        - ENJ
-        - EOS
-        - ETC
-        - GNT
-        - GTO
-        - ICX
-      base_timeframe: "1Min"
-      query_start: "2018-07-07 00:00"
   - module: binance_bnb_2.so
     name: Binance_BNB_2_Fetcher
     config:
-      symbols:
-        - IOTA
-        - LOOM
-        - LSK
-        - LTC
-        - MCO
-        - MFT
-        - NANO
-        - NAS
-        - NAV
-        - NCASH
-        - NEBL
-        - NEO
-        - NULS
-        - NXS
-        - ONT
-        - OST
-        - PHX
-        - PIVX
-        - POA
-        - POLY
-        - POWR
-        - QLC
-        - QSP
       base_timeframe: "1Min"
       query_start: "2018-07-07 00:00"
+      symbols:
+        - AE
+        - AGI
   - module: binance_bnb_3.so
     name: Binance_BNB_3_Fetcher
     config:
-      symbols:
-        - QTUM
-        - RCN
-        - RDN
-        - REP
-        - RLC
-        - RPX
-        - SC
-        - SKY
-        - STEEM
-        - STORM
-        - SYS
-        - THETA
-        - TRIG
-        - TUSD
-        - VEN
-        - VET
-        - VIA
-        - WABI
-        - WAN
-        - WAVES
-        - WTC
-        - XEM
-        - XLM
-        - XRP
-        - XZC
-        - ZEN
-        - ZIL
       base_timeframe: "1Min"
       query_start: "2018-07-07 00:00"
+      symbols:
+        - AION
+        - AMB
+  - module: binance_bnb_4.so
+    name: Binance_BNB_4_Fetcher
+    config:
+      base_timeframe: "1Min"
+      query_start: "2018-07-07 00:00"
+      symbols:
+        - APPC
+        - ARDR
+  - module: binance_bnb_5.so
+    name: Binance_BNB_5_Fetcher
+    config:
+      base_timeframe: "1Min"
+      query_start: "2018-07-07 00:00"
+      symbols:
+        - BAT
+        - BCN
+  - module: binance_bnb_6.so
+    name: Binance_BNB_6_Fetcher
+    config:
+      base_timeframe: "1Min"
+      query_start: "2018-07-07 00:00"
+      symbols:
+        - BCPT
+        - BLZ
+  - module: binance_bnb_7.so
+    name: Binance_BNB_7_Fetcher
+    config:
+      base_timeframe: "1Min"
+      query_start: "2018-07-07 00:00"
+      symbols:
+        - BRD
+        - BTS
+  - module: binance_bnb_8.so
+    name: Binance_BNB_8_Fetcher
+    config:
+      base_timeframe: "1Min"
+      query_start: "2018-07-07 00:00"
+      symbols:
+        - CMT
+        - CND
+  - module: binance_bnb_9.so
+    name: Binance_BNB_9_Fetcher
+    config:
+      base_timeframe: "1Min"
+      query_start: "2018-07-07 00:00"
+      symbols:
+        - CVC
+        - DLT
+  - module: binance_bnb_10.so
+    name: Binance_BNB_10_Fetcher
+    config:
+      base_timeframe: "1Min"
+      query_start: "2018-07-07 00:00"
+      symbols:
+        - ENJ
+        - EOS
+  - module: binance_bnb_11.so
+    name: Binance_BNB_11_Fetcher
+    config:
+      base_timeframe: "1Min"
+      query_start: "2018-07-07 00:00"
+      symbols:
+        - ETC
+        - GNT
+  - module: binance_bnb_12.so
+    name: Binance_BNB_12_Fetcher
+    config:
+      base_timeframe: "1Min"
+      query_start: "2018-07-07 00:00"
+      symbols:
+        - GTO
+        - ICX
+  - module: binance_bnb_13.so
+    name: Binance_BNB_13_Fetcher
+    config:
+      base_timeframe: "1Min"
+      query_start: "2018-07-07 00:00"
+      symbols:
+        - IOTA
+        - LOOM
+  - module: binance_bnb_14.so
+    name: Binance_BNB_14_Fetcher
+    config:
+      base_timeframe: "1Min"
+      query_start: "2018-07-07 00:00"
+      symbols:
+        - LSK
+        - LTC
+  - module: binance_bnb_15.so
+    name: Binance_BNB_15_Fetcher
+    config:
+      base_timeframe: "1Min"
+      query_start: "2018-07-07 00:00"
+      symbols:
+        - MCO
+        - MFT
+  - module: binance_bnb_16.so
+    name: Binance_BNB_16_Fetcher
+    config:
+      base_timeframe: "1Min"
+      query_start: "2018-07-07 00:00"
+      symbols:
+        - NANO
+        - NAS
+  - module: binance_bnb_17.so
+    name: Binance_BNB_17_Fetcher
+    config:
+      base_timeframe: "1Min"
+      query_start: "2018-07-07 00:00"
+      symbols:
+        - NAV
+        - NCASH
+  - module: binance_bnb_18.so
+    name: Binance_BNB_18_Fetcher
+    config:
+      base_timeframe: "1Min"
+      query_start: "2018-07-07 00:00"
+      symbols:
+        - NEBL
+        - NEO
+  - module: binance_bnb_19.so
+    name: Binance_BNB_19_Fetcher
+    config:
+      base_timeframe: "1Min"
+      query_start: "2018-07-07 00:00"
+      symbols:
+        - NULS
+        - NXS
+  - module: binance_bnb_20.so
+    name: Binance_BNB_20_Fetcher
+    config:
+      base_timeframe: "1Min"
+      query_start: "2018-07-07 00:00"
+      symbols:
+        - ONT
+        - OST
+  - module: binance_bnb_21.so
+    name: Binance_BNB_21_Fetcher
+    config:
+      base_timeframe: "1Min"
+      query_start: "2018-07-07 00:00"
+      symbols:
+        - PHX
+        - PIVX
+  - module: binance_bnb_22.so
+    name: Binance_BNB_22_Fetcher
+    config:
+      base_timeframe: "1Min"
+      query_start: "2018-07-07 00:00"
+      symbols:
+        - POA
+        - POLY
+  - module: binance_bnb_23.so
+    name: Binance_BNB_23_Fetcher
+    config:
+      base_timeframe: "1Min"
+      query_start: "2018-07-07 00:00"
+      symbols:
+        - POWR
+        - QLC
+  - module: binance_bnb_24.so
+    name: Binance_BNB_24_Fetcher
+    config:
+      base_timeframe: "1Min"
+      query_start: "2018-07-07 00:00"
+      symbols:
+        - QSP
+        - QTUM
+  - module: binance_bnb_25.so
+    name: Binance_BNB_25_Fetcher
+    config:
+      base_timeframe: "1Min"
+      query_start: "2018-07-07 00:00"
+      symbols:
+        - RCN
+        - RDN
+  - module: binance_bnb_26.so
+    name: Binance_BNB_26_Fetcher
+    config:
+      base_timeframe: "1Min"
+      query_start: "2018-07-07 00:00"
+      symbols:
+        - REP
+        - RLC
+  - module: binance_bnb_27.so
+    name: Binance_BNB_27_Fetcher
+    config:
+      base_timeframe: "1Min"
+      query_start: "2018-07-07 00:00"
+      symbols:
+        - RPX
+        - SC
+  - module: binance_bnb_28.so
+    name: Binance_BNB_28_Fetcher
+    config:
+      base_timeframe: "1Min"
+      query_start: "2018-07-07 00:00"
+      symbols:
+        - SKY
+        - STEEM
+  - module: binance_bnb_29.so
+    name: Binance_BNB_29_Fetcher
+    config:
+      base_timeframe: "1Min"
+      query_start: "2018-07-07 00:00"
+      symbols:
+        - STORM
+        - SYS
+  - module: binance_bnb_30.so
+    name: Binance_BNB_30_Fetcher
+    config:
+      base_timeframe: "1Min"
+      query_start: "2018-07-07 00:00"
+      symbols:
+        - THETA
+        - TRIG
+  - module: binance_bnb_31.so
+    name: Binance_BNB_31_Fetcher
+    config:
+      base_timeframe: "1Min"
+      query_start: "2018-07-07 00:00"
+      symbols:
+        - TUSD
+        - VEN
+  - module: binance_bnb_32.so
+    name: Binance_BNB_32_Fetcher
+    config:
+      base_timeframe: "1Min"
+      query_start: "2018-07-07 00:00"
+      symbols:
+        - VET
+        - VIA
+  - module: binance_bnb_33.so
+    name: Binance_BNB_33_Fetcher
+    config:
+      base_timeframe: "1Min"
+      query_start: "2018-07-07 00:00"
+      symbols:
+        - WABI
+        - WAN
+  - module: binance_bnb_34.so
+    name: Binance_BNB_34_Fetcher
+    config:
+      base_timeframe: "1Min"
+      query_start: "2018-07-07 00:00"
+      symbols:
+        - WAVES
+        - WTC
+  - module: binance_bnb_35.so
+    name: Binance_BNB_35_Fetcher
+    config:
+      base_timeframe: "1Min"
+      query_start: "2018-07-07 00:00"
+      symbols:
+        - XEM
+        - XLM
+  - module: binance_bnb_36.so
+    name: Binance_BNB_36_Fetcher
+    config:
+      base_timeframe: "1Min"
+      query_start: "2018-07-07 00:00"
+      symbols:
+        - XRP
+        - XZC
+  - module: binance_bnb_37.so
+    name: Binance_BNB_37_Fetcher
+    config:
+      base_timeframe: "1Min"
+      query_start: "2018-07-07 00:00"
+      symbols:
+        - ZEN
+        - ZIL
   - module: binance_eth_1.so
     name: Binance_ETH_1_Fetcher
     config:
+      base_timeframe: "1Min"
+      query_start: "2018-07-07 00:00"
       symbols:
         - ADA
         - ADX
         - AE
-        - AGI
-        - AION
-        - AMB
-        - APPC
-        - ARDR
-        - ARK
-        - ARN
-        - AST
-        - BAT
-        - BCD
-        - BCN
-        - BCPT
-        - BLZ
-        - BNB
-        - BNT
-        - BQX
-        - BRD
-        - BTG
-        - BTS
-        - CDT
-        - CHAT
-        - CLOAK
-        - CMT
-        - CND
-        - CVC
-        - DASH
-        - DATA
-        - DENT
-        - DLT
-        - DNT
-      base_timeframe: "1Min"
-      query_start: "2018-07-07 00:00"
   - module: binance_eth_2.so
     name: Binance_ETH_2_Fetcher
     config:
+      base_timeframe: "1Min"
+      query_start: "2018-07-07 00:00"
+      symbols:
+        - AGI
+        - AION
+        - AMB
+  - module: binance_eth_3.so
+    name: Binance_ETH_3_Fetcher
+    config:
+      base_timeframe: "1Min"
+      query_start: "2018-07-07 00:00"
+      symbols:
+        - APPC
+        - ARDR
+        - ARK
+  - module: binance_eth_4.so
+    name: Binance_ETH_4_Fetcher
+    config:
+      base_timeframe: "1Min"
+      query_start: "2018-07-07 00:00"
+      symbols:
+        - ARN
+        - AST
+        - BAT
+  - module: binance_eth_5.so
+    name: Binance_ETH_5_Fetcher
+    config:
+      base_timeframe: "1Min"
+      query_start: "2018-07-07 00:00"
+      symbols:
+        - BCD
+        - BCN
+        - BCPT
+  - module: binance_eth_6.so
+    name: Binance_ETH_6_Fetcher
+    config:
+      base_timeframe: "1Min"
+      query_start: "2018-07-07 00:00"
+      symbols:
+        - BLZ
+        - BNB
+        - BNT
+  - module: binance_eth_7.so
+    name: Binance_ETH_7_Fetcher
+    config:
+      base_timeframe: "1Min"
+      query_start: "2018-07-07 00:00"
+      symbols:
+        - BQX
+        - BRD
+        - BTG
+  - module: binance_eth_8.so
+    name: Binance_ETH_8_Fetcher
+    config:
+      base_timeframe: "1Min"
+      query_start: "2018-07-07 00:00"
+      symbols:
+        - BTS
+        - CDT
+        - CHAT
+  - module: binance_eth_9.so
+    name: Binance_ETH_9_Fetcher
+    config:
+      base_timeframe: "1Min"
+      query_start: "2018-07-07 00:00"
+      symbols:
+        - CLOAK
+        - CMT
+        - CND
+  - module: binance_eth_10.so
+    name: Binance_ETH_10_Fetcher
+    config:
+      base_timeframe: "1Min"
+      query_start: "2018-07-07 00:00"
+      symbols:
+        - CVC
+        - DASH
+        - DATA
+  - module: binance_eth_11.so
+    name: Binance_ETH_11_Fetcher
+    config:
+      base_timeframe: "1Min"
+      query_start: "2018-07-07 00:00"
+      symbols:
+        - DENT
+        - DLT
+        - DNT
+  - module: binance_eth_12.so
+    name: Binance_ETH_12_Fetcher
+    config:
+      base_timeframe: "1Min"
+      query_start: "2018-07-07 00:00"
       symbols:
         - GTO
         - GVT
         - GXS
+  - module: binance_eth_13.so
+    name: Binance_ETH_13_Fetcher
+    config:
+      base_timeframe: "1Min"
+      query_start: "2018-07-07 00:00"
+      symbols:
         - HC
         - HOT
         - HSR
+  - module: binance_eth_14.so
+    name: Binance_ETH_14_Fetcher
+    config:
+      base_timeframe: "1Min"
+      query_start: "2018-07-07 00:00"
+      symbols:
         - ICN
         - ICX
         - INS
+  - module: binance_eth_15.so
+    name: Binance_ETH_15_Fetcher
+    config:
+      base_timeframe: "1Min"
+      query_start: "2018-07-07 00:00"
+      symbols:
         - IOST
         - IOTA
         - IOTX
+  - module: binance_eth_16.so
+    name: Binance_ETH_16_Fetcher
+    config:
+      base_timeframe: "1Min"
+      query_start: "2018-07-07 00:00"
+      symbols:
         - KEY
         - KMD
         - KNC
+  - module: binance_eth_17.so
+    name: Binance_ETH_17_Fetcher
+    config:
+      base_timeframe: "1Min"
+      query_start: "2018-07-07 00:00"
+      symbols:
         - LEND
         - LINK
         - LOOM
+  - module: binance_eth_18.so
+    name: Binance_ETH_18_Fetcher
+    config:
+      base_timeframe: "1Min"
+      query_start: "2018-07-07 00:00"
+      symbols:
         - LRC
         - LSK
         - LTC
+  - module: binance_eth_19.so
+    name: Binance_ETH_19_Fetcher
+    config:
+      base_timeframe: "1Min"
+      query_start: "2018-07-07 00:00"
+      symbols:
         - LUN
         - MANA
         - MCO
+  - module: binance_eth_20.so
+    name: Binance_ETH_20_Fetcher
+    config:
+      base_timeframe: "1Min"
+      query_start: "2018-07-07 00:00"
+      symbols:
         - MDA
         - MFT
         - MOD
+  - module: binance_eth_21.so
+    name: Binance_ETH_21_Fetcher
+    config:
+      base_timeframe: "1Min"
+      query_start: "2018-07-07 00:00"
+      symbols:
         - MTH
         - MTL
         - NANO
+  - module: binance_eth_22.so
+    name: Binance_ETH_22_Fetcher
+    config:
+      base_timeframe: "1Min"
+      query_start: "2018-07-07 00:00"
+      symbols:
         - NAS
         - NAV
         - NCASH
-        - NEBL
-        - NEO
+  - module: binance_eth_23.so
+    name: Binance_ETH_23_Fetcher
+    config:
       base_timeframe: "1Min"
       query_start: "2018-07-07 00:00"
-  - module: binance_eth_3.so
-    name: Binance_ETH_3_Fetcher
-    config:
       symbols:
+        - NEBL
+        - NEO
         - QKC
+  - module: binance_eth_24.so
+    name: Binance_ETH_24_Fetcher
+    config:
+      base_timeframe: "1Min"
+      query_start: "2018-07-07 00:00"
+      symbols:
         - QLC
         - QSP
         - QTUM
+  - module: binance_eth_25.so
+    name: Binance_ETH_25_Fetcher
+    config:
+      base_timeframe: "1Min"
+      query_start: "2018-07-07 00:00"
+      symbols:
         - RCN
         - RDN
         - REP
+  - module: binance_eth_26.so
+    name: Binance_ETH_26_Fetcher
+    config:
+      base_timeframe: "1Min"
+      query_start: "2018-07-07 00:00"
+      symbols:
         - REQ
         - RLC
         - RPX
+  - module: binance_eth_27.so
+    name: Binance_ETH_27_Fetcher
+    config:
+      base_timeframe: "1Min"
+      query_start: "2018-07-07 00:00"
+      symbols:
         - SALT
         - SC
         - SKY
+  - module: binance_eth_28.so
+    name: Binance_ETH_28_Fetcher
+    config:
+      base_timeframe: "1Min"
+      query_start: "2018-07-07 00:00"
+      symbols:
         - SNGLS
         - SNM
         - SNT
+  - module: binance_eth_29.so
+    name: Binance_ETH_29_Fetcher
+    config:
+      base_timeframe: "1Min"
+      query_start: "2018-07-07 00:00"
+      symbols:
         - STEEM
         - STORJ
         - STORM
+  - module: binance_eth_30.so
+    name: Binance_ETH_30_Fetcher
+    config:
+      base_timeframe: "1Min"
+      query_start: "2018-07-07 00:00"
+      symbols:
         - STRAT
         - SUB
         - SYS
+  - module: binance_eth_31.so
+    name: Binance_ETH_31_Fetcher
+    config:
+      base_timeframe: "1Min"
+      query_start: "2018-07-07 00:00"
+      symbols:
         - THETA
         - TNB
         - TNT
+  - module: binance_eth_32.so
+    name: Binance_ETH_32_Fetcher
+    config:
+      base_timeframe: "1Min"
+      query_start: "2018-07-07 00:00"
+      symbols:
         - TRIG
         - TRX
         - TUSD
+  - module: binance_eth_33.so
+    name: Binance_ETH_33_Fetcher
+    config:
+      base_timeframe: "1Min"
+      query_start: "2018-07-07 00:00"
+      symbols:
         - VEN
         - VET
         - VIA
+  - module: binance_eth_34.so
+    name: Binance_ETH_34_Fetcher
+    config:
+      base_timeframe: "1Min"
+      query_start: "2018-07-07 00:00"
+      symbols:
         - VIB
         - VIBE
         - WABI
-        - WAN
+  - module: binance_eth_35.so
+    name: Binance_ETH_35_Fetcher
+    config:
       base_timeframe: "1Min"
       query_start: "2018-07-07 00:00"
-  - module: binance_eth_4.so
-    name: Binance_ETH_4_Fetcher
-    config:
       symbols:
+        - WAN
         - DOCK
         - EDO
+  - module: binance_eth_36.so
+    name: Binance_ETH_36_Fetcher
+    config:
+      base_timeframe: "1Min"
+      query_start: "2018-07-07 00:00"
+      symbols:
         - ELF
         - ENG
         - ENJ
+  - module: binance_eth_37.so
+    name: Binance_ETH_37_Fetcher
+    config:
+      base_timeframe: "1Min"
+      query_start: "2018-07-07 00:00"
+      symbols:
         - EOS
         - ETC
         - EVX
+  - module: binance_eth_38.so
+    name: Binance_ETH_38_Fetcher
+    config:
+      base_timeframe: "1Min"
+      query_start: "2018-07-07 00:00"
+      symbols:
         - FUEL
         - FUN
         - GNT
+  - module: binance_eth_39.so
+    name: Binance_ETH_39_Fetcher
+    config:
+      base_timeframe: "1Min"
+      query_start: "2018-07-07 00:00"
+      symbols:
         - GRS
         - GTO
         - NPXS
+  - module: binance_eth_40.so
+    name: Binance_ETH_40_Fetcher
+    config:
+      base_timeframe: "1Min"
+      query_start: "2018-07-07 00:00"
+      symbols:
         - NULS
         - NXS
         - OAX
+  - module: binance_eth_41.so
+    name: Binance_ETH_41_Fetcher
+    config:
+      base_timeframe: "1Min"
+      query_start: "2018-07-07 00:00"
+      symbols:
         - OMG
         - ONT
         - OST
+  - module: binance_eth_42.so
+    name: Binance_ETH_42_Fetcher
+    config:
+      base_timeframe: "1Min"
+      query_start: "2018-07-07 00:00"
+      symbols:
         - PHX
         - PIVX
         - POA
+  - module: binance_eth_43.so
+    name: Binance_ETH_43_Fetcher
+    config:
+      base_timeframe: "1Min"
+      query_start: "2018-07-07 00:00"
+      symbols:
         - POE
         - POWR
         - PPT
+  - module: binance_eth_44.so
+    name: Binance_ETH_44_Fetcher
+    config:
+      base_timeframe: "1Min"
+      query_start: "2018-07-07 00:00"
+      symbols:
         - WAVES
         - WINGS
         - WPR
+  - module: binance_eth_45.so
+    name: Binance_ETH_45_Fetcher
+    config:
+      base_timeframe: "1Min"
+      query_start: "2018-07-07 00:00"
+      symbols:
         - WTC
         - XEM
         - XLM
+  - module: binance_eth_46.so
+    name: Binance_ETH_46_Fetcher
+    config:
+      base_timeframe: "1Min"
+      query_start: "2018-07-07 00:00"
+      symbols:
         - XMR
         - XRP
         - XVG
+  - module: binance_eth_47.so
+    name: Binance_ETH_47_Fetcher
+    config:
+      base_timeframe: "1Min"
+      query_start: "2018-07-07 00:00"
+      symbols:
         - XZC
         - ZEC
         - ZEN
+  - module: binance_eth_48.so
+    name: Binance_ETH_48_Fetcher
+    config:
+      base_timeframe: "1Min"
+      query_start: "2018-07-07 00:00"
+      symbols:
         - ZIL
         - ZRX
-      base_timeframe: "1Min"
-      query_start: "2018-07-07 00:00"
-  - module: gdax_usd.so
-    name: Gdax_USD_Fetcher
-    config:
-      symbols:
-        - BTC
-        - BCH
-        - ETC
-        - ETH
-        - LTC
-      base_timeframe: "1Min"
-      query_start: "2018-07-07 00:00"
-  - module: gdax_btc.so
-    name: Gdax_BTC_Fetcher
-    config:
-      symbols:
-        - BCH
-        - ETC
-        - ETH
-        - LTC
-      base_timeframe: "1Min"
-      query_start: "2018-07-07 00:00"
-  - module: testgdax_usd.so
-    name: TestGdax_USD_Fetcher
-    config:
-      symbols:
-        - BTC
-        - BCH
-        - ETC
-        - ETH
-        - LTC
-      base_timeframe: "1Min"
-  - module: testgdax_btc.so
-    name: TestGdax_BTC_Fetcher
-    config:
-      symbols:
-        - BCH
-        - ETC
-        - ETH
-        - LTC
-      base_timeframe: "1Min"
+#  - module: gdax_usd.so
+#    name: Gdax_USD_Fetcher
+#    config:
+#      symbols:
+#        - BTC
+#        - BCH
+#        - ETC
+#        - ETH
+#        - LTC
+#      base_timeframe: "1Min"
+#      query_start: "2018-07-07 00:00"
+#  - module: gdax_btc.so
+#    name: Gdax_BTC_Fetcher
+#    config:
+#      symbols:
+#        - BCH
+#        - ETC
+#        - ETH
+#        - LTC
+#      base_timeframe: "1Min"
+#      query_start: "2018-07-07 00:00"
+#  - module: testgdax_usd.so
+#    name: TestGdax_USD_Fetcher
+#    config:
+#      symbols:
+#        - BTC
+#        - BCH
+#        - ETC
+#        - ETH
+#        - LTC
+#      base_timeframe: "1Min"
+#  - module: testgdax_btc.so
+#    name: TestGdax_BTC_Fetcher
+#    config:
+#      symbols:
+#        - BCH
+#        - ETC
+#        - ETH
+#        - LTC
+#      base_timeframe: "1Min"
 #    on: "*/1Min/kline"
 #    config:
 #      destinations:
