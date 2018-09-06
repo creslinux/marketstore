@@ -488,7 +488,7 @@ func (bn *BinanceFetcher) Run() {
 		} else {
 			// Binance rate limit is 20 reequests per second so this shouldn't be an issue.
       			// Changed to 100msec - Creslin
-			time.Sleep(time.Second * 10)
+			time.Sleep(time.Second * 70)
 		}
 
 	}
